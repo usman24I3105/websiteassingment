@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover New Zealand - Breathtaking landscapes, adventure activities, and pristine nature in the Land of the Long White Cloud">
+    <title>New Zealand Travel Guide - Erica's Travel Blog</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Erica's Travels</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Destinations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hong-kong.html" class="nav-link">Hong Kong</a></li>
+                        <li><a href="new-zealand.html" class="nav-link active">New Zealand</a></li>
+                        <li><a href="rome.html" class="nav-link">Rome</a></li>
+                        <li><a href="madrid.html" class="nav-link">Madrid</a></li>
+                        <li><a href="moscow.html" class="nav-link">Moscow</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Destination Hero -->
+    <section class="destination-hero">
+        <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?w=1920&q=80" alt="New Zealand Landscape">
+        <div class="destination-hero-content">
+            <h1>New Zealand</h1>
+            <p>The Land of the Long White Cloud</p>
+        </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <section class="section">
+        <div class="container">
+            <div class="quick-facts">
+                <h3>Quick Facts</h3>
+                <div class="fact-item">
+                    <span class="fact-label">Currency</span>
+                    <span class="fact-value">New Zealand Dollar (NZD)</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Language</span>
+                    <span class="fact-value">English, Māori</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Timezone</span>
+                    <span class="fact-value">NZST (UTC+12)</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Best Time to Visit</span>
+                    <span class="fact-value">December - March (Summer)</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Visa</span>
+                    <span class="fact-value">ETA required for most countries</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs -->
+    <section class="section">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="things-to-do">Things to See & Do</button>
+                <button class="tab-button" data-tab="how-to-get-there">How to Get There</button>
+                <button class="tab-button" data-tab="when-to-go">When to Go</button>
+            </div>
+
+            <!-- Things to See and Do -->
+            <div class="tab-content active" data-tab="things-to-do">
+                <h2>Top Attractions</h2>
+                
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?w=800&q=80" alt="Milford Sound" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Milford Sound</h4>
+                        <p>One of New Zealand's most stunning natural wonders, this fjord in Fiordland National Park features dramatic cliffs, waterfalls, and pristine waters. Take a boat cruise or kayak to fully appreciate its beauty.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80" alt="Queenstown" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Queenstown</h4>
+                        <p>The adventure capital of the world! Try bungee jumping, skydiving, jet boating, or skiing. Surrounded by stunning mountains and Lake Wakatipu, it's also perfect for scenic walks and photography.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80" alt="Tongariro National Park" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Tongariro Alpine Crossing</h4>
+                        <p>Considered one of the world's best one-day hikes, this 19.4km trail takes you through volcanic landscapes, emerald lakes, and stunning alpine scenery. Requires good fitness and proper preparation.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Rotorua" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Rotorua</h4>
+                        <p>Experience Māori culture and geothermal wonders. Visit geysers, hot springs, mud pools, and learn about indigenous traditions. Don't miss the Polynesian Spa for a relaxing soak.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80" alt="Auckland" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Auckland</h4>
+                        <p>New Zealand's largest city offers a vibrant mix of urban culture, beautiful harbors, and nearby islands. Climb the Sky Tower, visit Waiheke Island for wine tasting, or explore the waterfront.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80" alt="Franz Josef Glacier" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Franz Josef & Fox Glaciers</h4>
+                        <p>Walk on or fly over these spectacular glaciers on the West Coast. Guided ice walks and helicopter tours offer unforgettable experiences in this unique alpine environment.</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Hidden Gems</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light);">
+                    <li><strong>Cathedral Cove:</strong> Beautiful beach accessible by boat or hike on the Coromandel Peninsula</li>
+                    <li><strong>Abel Tasman National Park:</strong> Golden beaches and coastal tracks perfect for kayaking</li>
+                    <li><strong>Waitomo Glowworm Caves:</strong> Magical underground caves lit by thousands of glowworms</li>
+                    <li><strong>Mount Cook National Park:</strong> New Zealand's highest peak and stunning alpine scenery</li>
+                </ul>
+            </div>
+
+            <!-- How to Get There -->
+            <div class="tab-content" data-tab="how-to-get-there">
+                <h2>Getting to New Zealand</h2>
+                
+                <h3>By Air</h3>
+                <p>New Zealand has three main international airports: Auckland (AKL), Wellington (WLG), and Christchurch (CHC). Auckland is the primary gateway with the most international connections.</p>
+                
+                <h3>From the Airport</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light); margin-bottom: 2rem;">
+                    <li><strong>Airport Shuttles:</strong> Shared shuttles to city centers (NZD 20-40)</li>
+                    <li><strong>Public Buses:</strong> SkyBus in Auckland and Christchurch (NZD 18-20)</li>
+                    <li><strong>Taxis/Uber:</strong> Available at all airports (NZD 50-100 to city center)</li>
+                    <li><strong>Car Rental:</strong> Major companies available at all airports</li>
+                </ul>
+
+                <h3>Getting Around New Zealand</h3>
+                <p>New Zealand is best explored by car or campervan, but public transport options are available:</p>
+                
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light);">
+                    <li><strong>Car/Campervan Rental:</strong> Most popular option for flexibility and freedom</li>
+                    <li><strong>InterCity Buses:</strong> Extensive network connecting major cities and towns</li>
+                    <li><strong>Domestic Flights:</strong> Air New Zealand and Jetstar connect main cities</li>
+                    <li><strong>Trains:</strong> Limited but scenic routes, especially the Northern Explorer</li>
+                    <li><strong>Ferries:</strong> Interislander and Bluebridge connect North and South Islands</li>
+                </ul>
+
+                <h3>Visa Requirements</h3>
+                <p>Most visitors need an Electronic Travel Authority (NZeTA) before traveling. This can be obtained online and is valid for multiple visits over 2 years. Check the New Zealand Immigration website for specific requirements based on your nationality.</p>
+            </div>
+
+            <!-- When to Go -->
+            <div class="tab-content" data-tab="when-to-go">
+                <h2>Best Time to Visit</h2>
+                
+                <h3>Weather Overview</h3>
+                <p>New Zealand has a temperate climate with distinct seasons. The weather varies significantly between the North and South Islands, with the South Island generally cooler.</p>
+
+                <div style="background: var(--light-color); padding: 2rem; border-radius: 10px; margin: 2rem 0;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Seasonal Guide</h4>
+                    
+                    <p><strong>December - February (Summer):</strong> Peak season with warm weather (20-30°C), perfect for beaches, hiking, and outdoor activities. Long daylight hours. Most crowded and expensive.</p>
+                    
+                    <p><strong>March - May (Autumn):</strong> Pleasant temperatures (15-25°C), fewer crowds, beautiful fall colors. Great for hiking and sightseeing. Shoulder season with moderate prices.</p>
+                    
+                    <p><strong>June - August (Winter):</strong> Cool to cold (5-15°C), perfect for skiing in the South Island. Fewer tourists and lower prices. Some attractions may have limited hours.</p>
+                    
+                    <p><strong>September - November (Spring):</strong> Mild weather (10-20°C), blooming flowers, baby animals. Good balance of weather, crowds, and prices. Ideal for nature lovers.</p>
+                </div>
+
+                <h3>Peak vs Off-Peak Seasons</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light); margin-bottom: 2rem;">
+                    <li><strong>Peak Season:</strong> December - February (summer holidays, highest prices)</li>
+                    <li><strong>Shoulder Season:</strong> March - May, September - November (good weather, moderate prices)</li>
+                    <li><strong>Off-Peak:</strong> June - August (winter, lower prices, ski season in South Island)</li>
+                </ul>
+
+                <h3>Local Festivals & Events</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light);">
+                    <li><strong>Waitangi Day (February 6):</strong> National day celebrating the Treaty of Waitangi</li>
+                    <li><strong>Wellington Sevens (February):</strong> International rugby sevens tournament</li>
+                    <li><strong>Matariki (June/July):</strong> Māori New Year celebrations</li>
+                    <li><strong>Queenstown Winter Festival (June/July):</strong> Winter celebration with events and activities</li>
+                </ul>
+
+                <h3>Budget Considerations</h3>
+                <p>Summer (December-February) is the most expensive time with accommodation prices 30-50% higher. Book well in advance. Winter offers better deals, especially in the North Island. Consider traveling during shoulder seasons for the best balance of weather and prices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section intro">
+        <div class="container">
+            <h2 class="section-title">Explore New Zealand</h2>
+            <div style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden; margin-top: 2rem;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3045641.123456789!2d171.0!3d-41.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d2c200e17779687%3A0xb1d618e2756a4733!2sNew%20Zealand!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Destinations -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Related Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=800&q=80" alt="Hong Kong" class="destination-image">
+                    <div class="destination-content">
+                        <h3>Hong Kong</h3>
+                        <p>Experience the vibrant energy of Asia's world city.</p>
+                        <a href="hong-kong.html" class="destination-link">Explore Hong Kong <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=800&q=80" alt="Rome" class="destination-image">
+                    <div class="destination-content">
+                        <h3>Rome</h3>
+                        <p>Step back in time in the Eternal City.</p>
+                        <a href="rome.html" class="destination-link">Explore Rome <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Erica's Travels</h3>
+                    <p>Inspiring adventures and travel stories from around the world. Join me on this incredible journey!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="index.html#destinations" class="footer-link">Destinations</a></li>
+                        <li><a href="about.html#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get travel tips and destination guides delivered to your inbox!</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                        <div class="form-error"></div>
+                        <div class="form-success">Thank you for subscribing!</div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Erica's Travel Blog. All rights reserved. | <a href="#" class="footer-link">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
