@@ -1,4 +1,41 @@
 // ============================================
+// Dark Mode Toggle
+// ============================================
+
+function initDarkMode() {
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or default to light mode
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+    
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Add transition effect
+            html.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+            
+            // Trigger a subtle animation
+            themeToggle.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                themeToggle.style.transform = 'scale(1)';
+            }, 150);
+        });
+    }
+}
+
+// Initialize dark mode on page load
+document.addEventListener('DOMContentLoaded', () => {
+    initDarkMode();
+});
+
+// ============================================
 // Navigation & Mobile Menu
 // ============================================
 
@@ -22,7 +59,7 @@ navLinks.forEach(link => {
     });
 });
 
-// Navbar scroll effect
+// Navbar scroll effect with enhanced animations
 const navbar = document.querySelector('.navbar');
 let lastScroll = 0;
 
@@ -35,8 +72,18 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
     }
     
+    // Parallax effect for hero background
+    const hero = document.querySelector('.hero');
+    if (hero && currentScroll < window.innerHeight) {
+        const heroBackground = hero.querySelector('.hero-background');
+        if (heroBackground) {
+            const scrolled = currentScroll * 0.5;
+            heroBackground.style.transform = `translateY(${scrolled}px) scale(1.1)`;
+        }
+    }
+    
     lastScroll = currentScroll;
-});
+}, { passive: true });
 
 // Active navigation highlighting
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
@@ -470,18 +517,99 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ============================================
-// Page Load Animation
+// Page Load Animation & Transitions
 // ============================================
 
 window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
+    document.body.classList.add('loaded', 'page-transition');
     
-    // Fade in hero content
+    // Fade in hero content with enhanced animation
     const heroContent = document.querySelector('.hero-content');
     if (heroContent) {
         heroContent.style.opacity = '0';
+        heroContent.style.transform = 'translateY(30px)';
         heroContent.style.animation = 'fadeInUp 1s ease forwards';
+        
+        setTimeout(() => {
+            heroContent.style.opacity = '1';
+            heroContent.style.transform = 'translateY(0)';
+        }, 100);
     }
+    
+    // Stagger animation for destination cards
+    const destinationCards = document.querySelectorAll('.destination-card');
+    destinationCards.forEach((card, index) => {
+        setTimeout(() => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, index * 100);
+        }, 300);
+    });
+});
+
+// ============================================
+// Enhanced Micro-interactions
+// ============================================
+
+// Add ripple effect to buttons
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.btn, .newsletter-btn, .tab-button');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+            
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.classList.add('ripple');
+            
+            this.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    });
+    
+    // Add hover effects to cards
+    const cards = document.querySelectorAll('.destination-card, .attraction-card, .stat-card');
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+        });
+    });
+});
+
+// ============================================
+// Smooth Page Transitions
+// ============================================
+
+// Add smooth transitions when navigating between pages
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('a[href^=""]');
+    
+    links.forEach(link => {
+        if (link.hostname === window.location.hostname || !link.hostname) {
+            link.addEventListener('click', function(e) {
+                // Only apply to internal links
+                if (this.href && !this.href.includes('#')) {
+                    const target = this.getAttribute('href');
+                    if (target && !target.startsWith('#') && !target.startsWith('http')) {
+                        // Add fade out effect
+                        document.body.style.opacity = '0.8';
+                        document.body.style.transition = 'opacity 0.2s ease';
+                    }
+                }
+            });
+        }
+    });
 });
 
 
