@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Rome - Ancient history, stunning architecture, and authentic Italian cuisine in the Eternal City">
+    <title>Rome Travel Guide - Erica's Travel Blog</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Erica's Travels</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Destinations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hong-kong.html" class="nav-link">Hong Kong</a></li>
+                        <li><a href="new-zealand.html" class="nav-link">New Zealand</a></li>
+                        <li><a href="rome.html" class="nav-link active">Rome</a></li>
+                        <li><a href="madrid.html" class="nav-link">Madrid</a></li>
+                        <li><a href="moscow.html" class="nav-link">Moscow</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Destination Hero -->
+    <section class="destination-hero">
+        <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=1920&q=80" alt="Rome Colosseum">
+        <div class="destination-hero-content">
+            <h1>Rome</h1>
+            <p>The Eternal City</p>
+        </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <section class="section">
+        <div class="container">
+            <div class="quick-facts">
+                <h3>Quick Facts</h3>
+                <div class="fact-item">
+                    <span class="fact-label">Currency</span>
+                    <span class="fact-value">Euro (EUR)</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Language</span>
+                    <span class="fact-value">Italian</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Timezone</span>
+                    <span class="fact-value">CET (UTC+1)</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Best Time to Visit</span>
+                    <span class="fact-value">April - June, September - October</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Visa</span>
+                    <span class="fact-value">Schengen visa for non-EU visitors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs -->
+    <section class="section">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="things-to-do">Things to See & Do</button>
+                <button class="tab-button" data-tab="how-to-get-there">How to Get There</button>
+                <button class="tab-button" data-tab="when-to-go">When to Go</button>
+            </div>
+
+            <!-- Things to See and Do -->
+            <div class="tab-content active" data-tab="things-to-do">
+                <h2>Top Attractions</h2>
+                
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=800&q=80" alt="Colosseum" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Colosseum</h4>
+                        <p>Rome's most iconic landmark, this ancient amphitheater once hosted gladiator battles and public spectacles. Book skip-the-line tickets in advance to avoid long queues. Consider a guided tour to learn about its fascinating history.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=80" alt="Vatican City" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Vatican City & St. Peter's Basilica</h4>
+                        <p>Visit the world's smallest country and home to the Pope. Marvel at the Sistine Chapel's ceiling painted by Michelangelo, explore the Vatican Museums, and climb to the top of St. Peter's Basilica for stunning city views.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=800&q=80" alt="Trevi Fountain" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Trevi Fountain</h4>
+                        <p>Throw a coin into this magnificent Baroque fountain to ensure your return to Rome. Visit early morning or late evening to avoid the crowds. The fountain is beautifully lit at night, creating a magical atmosphere.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=800&q=80" alt="Pantheon" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Pantheon</h4>
+                        <p>One of the best-preserved ancient Roman buildings, the Pantheon features a remarkable dome with an oculus opening. Free to enter, it's a masterpiece of Roman engineering and architecture. Visit during rain to see the dramatic light effects.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=80" alt="Roman Forum" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Roman Forum & Palatine Hill</h4>
+                        <p>Walk through the ruins of ancient Rome's political and social center. Combined ticket with the Colosseum. Allow 2-3 hours to explore the extensive ruins and imagine life in ancient Rome.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=800&q=80" alt="Spanish Steps" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Spanish Steps & Piazza di Spagna</h4>
+                        <p>Climb the famous 135 steps leading to Trinità dei Monti church. The area is perfect for people-watching, shopping on Via dei Condotti, and enjoying gelato. Note: sitting on the steps is now prohibited.</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Hidden Gems</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light);">
+                    <li><strong>Appian Way:</strong> Ancient Roman road perfect for cycling or walking</li>
+                    <li><strong>Trastevere:</strong> Charming neighborhood with narrow streets and authentic restaurants</li>
+                    <li><strong>Villa Borghese:</strong> Beautiful park with museums and gardens</li>
+                    <li><strong>Testaccio Market:</strong> Local food market offering authentic Roman cuisine</li>
+                </ul>
+            </div>
+
+            <!-- How to Get There -->
+            <div class="tab-content" data-tab="how-to-get-there">
+                <h2>Getting to Rome</h2>
+                
+                <h3>By Air</h3>
+                <p>Rome has two main airports: Leonardo da Vinci-Fiumicino Airport (FCO) and Ciampino Airport (CIA). Fiumicino is the main international airport, while Ciampino serves mostly low-cost carriers.</p>
+                
+                <h3>From the Airport</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light); margin-bottom: 2rem;">
+                    <li><strong>Leonardo Express:</strong> Direct train from Fiumicino to Termini Station (32 minutes, €14)</li>
+                    <li><strong>Airport Shuttles:</strong> Shared shuttles to city center (€6-8)</li>
+                    <li><strong>Taxis:</strong> Fixed fare of €48 from Fiumicino to city center</li>
+                    <li><strong>Bus:</strong> Terravision and other companies offer budget options (€5-8)</li>
+                </ul>
+
+                <h3>Getting Around Rome</h3>
+                <p>Rome is best explored on foot, but public transport is efficient and affordable:</p>
+                
+                <div style="background: var(--light-color); padding: 2rem; border-radius: 10px; margin: 2rem 0;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Roma Pass</h4>
+                    <p>Consider purchasing a Roma Pass for free public transport and discounted museum entries. Available for 48 or 72 hours.</p>
+                </div>
+
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light);">
+                    <li><strong>Metro:</strong> Three lines (A, B, C) connecting major attractions (€1.50 per ride)</li>
+                    <li><strong>Buses & Trams:</strong> Extensive network covering the entire city</li>
+                    <li><strong>Walking:</strong> Many attractions are within walking distance in the historic center</li>
+                    <li><strong>Taxis:</strong> Available but expensive; use official white taxis with meters</li>
+                    <li><strong>Bike/Scooter Sharing:</strong> Various apps available for short trips</li>
+                </ul>
+
+                <h3>Visa Requirements</h3>
+                <p>Italy is part of the Schengen Area. Non-EU visitors typically need a Schengen visa, which allows travel within 26 European countries. US, Canadian, Australian, and many other passport holders can enter visa-free for up to 90 days.</p>
+            </div>
+
+            <!-- When to Go -->
+            <div class="tab-content" data-tab="when-to-go">
+                <h2>Best Time to Visit</h2>
+                
+                <h3>Weather Overview</h3>
+                <p>Rome has a Mediterranean climate with hot summers and mild winters. The best times to visit are spring and autumn when the weather is pleasant and crowds are manageable.</p>
+
+                <div style="background: var(--light-color); padding: 2rem; border-radius: 10px; margin: 2rem 0;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Seasonal Guide</h4>
+                    
+                    <p><strong>April - June (Spring):</strong> Perfect weather (15-25°C), blooming flowers, ideal for sightseeing. Peak season begins in May. Book accommodations early.</p>
+                    
+                    <p><strong>July - August (Summer):</strong> Hot and crowded (25-35°C), many locals on vacation. Some restaurants close. High season with peak prices. Stay hydrated and visit attractions early morning.</p>
+                    
+                    <p><strong>September - October (Autumn):</strong> Pleasant temperatures (18-25°C), fewer crowds, harvest season. Excellent time to visit with good weather and moderate prices.</p>
+                    
+                    <p><strong>November - March (Winter):</strong> Cool and rainy (5-15°C), fewer tourists, lower prices. Some attractions have shorter hours. Christmas season (December) is magical but busy.</p>
+                </div>
+
+                <h3>Peak vs Off-Peak Seasons</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light); margin-bottom: 2rem;">
+                    <li><strong>Peak Season:</strong> May - September (highest prices, largest crowds)</li>
+                    <li><strong>Shoulder Season:</strong> April, October (good weather, moderate prices)</li>
+                    <li><strong>Off-Peak:</strong> November - March (lower prices, fewer crowds, cooler weather)</li>
+                </ul>
+
+                <h3>Local Festivals & Events</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light);">
+                    <li><strong>Easter (March/April):</strong> Major religious celebrations, Pope's blessing</li>
+                    <li><strong>Rome's Birthday (April 21):</strong> City celebrations and events</li>
+                    <li><strong>Festa della Repubblica (June 2):</strong> National holiday with military parade</li>
+                    <li><strong>Christmas & New Year:</strong> Beautiful decorations, nativity scenes, special events</li>
+                </ul>
+
+                <h3>Budget Considerations</h3>
+                <p>Summer months (June-August) see prices increase by 30-50% for accommodations. Book 2-3 months in advance for better rates. Winter offers the best deals, but some attractions may have limited hours. Shoulder seasons (spring/autumn) provide the best balance of weather, crowds, and prices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section intro">
+        <div class="container">
+            <h2 class="section-title">Explore Rome</h2>
+            <div style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden; margin-top: 2rem;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.714573035!2d12.496365515456!3d41.902783479221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770d656fed40!2sRome%2C%20Metropolitan%20City%20of%20Rome%20Capital%2C%20Italy!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Destinations -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Related Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&q=80" alt="Madrid" class="destination-image">
+                    <div class="destination-content">
+                        <h3>Madrid</h3>
+                        <p>Experience vibrant Spanish culture and world-class art.</p>
+                        <a href="madrid.html" class="destination-link">Explore Madrid <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=800&q=80" alt="Hong Kong" class="destination-image">
+                    <div class="destination-content">
+                        <h3>Hong Kong</h3>
+                        <p>Discover the perfect blend of East and West.</p>
+                        <a href="hong-kong.html" class="destination-link">Explore Hong Kong <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Erica's Travels</h3>
+                    <p>Inspiring adventures and travel stories from around the world. Join me on this incredible journey!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="index.html#destinations" class="footer-link">Destinations</a></li>
+                        <li><a href="about.html#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get travel tips and destination guides delivered to your inbox!</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                        <div class="form-error"></div>
+                        <div class="form-success">Thank you for subscribing!</div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Erica's Travel Blog. All rights reserved. | <a href="#" class="footer-link">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

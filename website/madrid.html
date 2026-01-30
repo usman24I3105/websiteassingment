@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Madrid - Vibrant Spanish capital with world-class museums, delicious tapas, and rich cultural heritage">
+    <title>Madrid Travel Guide - Erica's Travel Blog</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Erica's Travels</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Destinations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hong-kong.html" class="nav-link">Hong Kong</a></li>
+                        <li><a href="new-zealand.html" class="nav-link">New Zealand</a></li>
+                        <li><a href="rome.html" class="nav-link">Rome</a></li>
+                        <li><a href="madrid.html" class="nav-link active">Madrid</a></li>
+                        <li><a href="moscow.html" class="nav-link">Moscow</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Destination Hero -->
+    <section class="destination-hero">
+        <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1920&q=80" alt="Madrid">
+        <div class="destination-hero-content">
+            <h1>Madrid</h1>
+            <p>The Heart of Spain</p>
+        </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <section class="section">
+        <div class="container">
+            <div class="quick-facts">
+                <h3>Quick Facts</h3>
+                <div class="fact-item">
+                    <span class="fact-label">Currency</span>
+                    <span class="fact-value">Euro (EUR)</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Language</span>
+                    <span class="fact-value">Spanish</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Timezone</span>
+                    <span class="fact-value">CET (UTC+1)</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Best Time to Visit</span>
+                    <span class="fact-value">April - June, September - October</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-label">Visa</span>
+                    <span class="fact-value">Schengen visa for non-EU visitors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs -->
+    <section class="section">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="things-to-do">Things to See & Do</button>
+                <button class="tab-button" data-tab="how-to-get-there">How to Get There</button>
+                <button class="tab-button" data-tab="when-to-go">When to Go</button>
+            </div>
+
+            <!-- Things to See and Do -->
+            <div class="tab-content active" data-tab="things-to-do">
+                <h2>Top Attractions</h2>
+                
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&q=80" alt="Prado Museum" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Prado Museum</h4>
+                        <p>One of the world's greatest art museums, housing masterpieces by Goya, Velázquez, El Greco, and other Spanish masters. Allow at least 3-4 hours to explore. Free entry on certain evenings.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=80" alt="Royal Palace" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Royal Palace of Madrid</h4>
+                        <p>Spain's official royal residence, though the royal family doesn't live here. Explore opulent rooms, the armory, and beautiful gardens. Book tickets in advance to avoid queues.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=800&q=80" alt="Retiro Park" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Retiro Park</h4>
+                        <p>Madrid's beautiful central park, perfect for strolling, rowing on the lake, or relaxing. Don't miss the Crystal Palace and the Monument to Alfonso XII. Free to enter.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=800&q=80" alt="Plaza Mayor" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Plaza Mayor</h4>
+                        <p>The historic main square, surrounded by beautiful architecture. Great for people-watching, enjoying tapas at outdoor cafes, and experiencing the vibrant atmosphere. Visit during festivals for special events.</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=80" alt="Reina Sofía Museum" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Reina Sofía Museum</h4>
+                        <p>Home to Picasso's famous "Guernica" and an impressive collection of modern and contemporary Spanish art. Combined with Prado and Thyssen-Bornemisza, they form Madrid's "Golden Triangle of Art."</p>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=800&q=80" alt="Tapas Tour" class="attraction-image">
+                    <div class="attraction-content">
+                        <h4>Tapas Tour in La Latina</h4>
+                        <p>Experience Madrid's famous tapas culture in the La Latina neighborhood. Join locals for a tapeo (tapas crawl) from bar to bar, sampling delicious small plates and Spanish wines.</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Hidden Gems</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light);">
+                    <li><strong>Mercado de San Miguel:</strong> Beautiful covered market with gourmet food stalls</li>
+                    <li><strong>Debod Temple:</strong> Ancient Egyptian temple relocated to Madrid, great sunset spot</li>
+                    <li><strong>Chueca Neighborhood:</strong> Trendy LGBTQ+ friendly area with great nightlife</li>
+                    <li><strong>Matadero Madrid:</strong> Former slaughterhouse turned contemporary arts center</li>
+                </ul>
+            </div>
+
+            <!-- How to Get There -->
+            <div class="tab-content" data-tab="how-to-get-there">
+                <h2>Getting to Madrid</h2>
+                
+                <h3>By Air</h3>
+                <p>Madrid-Barajas Airport (MAD) is Spain's busiest airport and a major European hub. It has four terminals and excellent connections to the city center.</p>
+                
+                <h3>From the Airport</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light); margin-bottom: 2rem;">
+                    <li><strong>Metro Line 8:</strong> Direct connection to city center (45 minutes, €5-7)</li>
+                    <li><strong>Airport Express Bus:</strong> Direct service to Atocha and Plaza de Cibeles (€5)</li>
+                    <li><strong>Taxis:</strong> Fixed fare of €30 to city center (daytime) or €35 (night/holidays)</li>
+                    <li><strong>Private Transfer:</strong> Pre-booked cars available (€40-60)</li>
+                </ul>
+
+                <h3>Getting Around Madrid</h3>
+                <p>Madrid has an excellent public transportation system:</p>
+                
+                <div style="background: var(--light-color); padding: 2rem; border-radius: 10px; margin: 2rem 0;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Tourist Travel Pass</h4>
+                    <p>Consider purchasing a Madrid Tourist Travel Pass for unlimited travel on metro, buses, and trains. Available for 1, 2, 3, 5, or 7 days.</p>
+                </div>
+
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light);">
+                    <li><strong>Metro:</strong> Extensive 12-line network covering the entire city (€1.50-2 per ride)</li>
+                    <li><strong>Buses:</strong> Comprehensive bus network, great for sightseeing</li>
+                    <li><strong>Walking:</strong> Many attractions are within walking distance in the historic center</li>
+                    <li><strong>Taxis:</strong> Readily available, use official white taxis with meters</li>
+                    <li><strong>Bike Sharing:</strong> BiciMAD public bike system available</li>
+                </ul>
+
+                <h3>Visa Requirements</h3>
+                <p>Spain is part of the Schengen Area. Non-EU visitors typically need a Schengen visa, which allows travel within 26 European countries. US, Canadian, Australian, and many other passport holders can enter visa-free for up to 90 days.</p>
+            </div>
+
+            <!-- When to Go -->
+            <div class="tab-content" data-tab="when-to-go">
+                <h2>Best Time to Visit</h2>
+                
+                <h3>Weather Overview</h3>
+                <p>Madrid has a continental Mediterranean climate with hot, dry summers and cool winters. Spring and autumn offer the most pleasant weather for sightseeing.</p>
+
+                <div style="background: var(--light-color); padding: 2rem; border-radius: 10px; margin: 2rem 0;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Seasonal Guide</h4>
+                    
+                    <p><strong>April - June (Spring):</strong> Perfect weather (15-25°C), blooming parks, ideal for outdoor activities. Peak season begins in May. Book accommodations early.</p>
+                    
+                    <p><strong>July - August (Summer):</strong> Hot and dry (25-35°C), many locals escape to the coast. Some businesses close. High season with peak prices. Stay hydrated and visit museums during the day.</p>
+                    
+                    <p><strong>September - October (Autumn):</strong> Pleasant temperatures (18-25°C), fewer crowds, harvest season. Excellent time to visit with good weather and moderate prices.</p>
+                    
+                    <p><strong>November - March (Winter):</strong> Cool and sometimes rainy (5-15°C), fewer tourists, lower prices. Christmas season (December) is magical with lights and markets.</p>
+                </div>
+
+                <h3>Peak vs Off-Peak Seasons</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light); margin-bottom: 2rem;">
+                    <li><strong>Peak Season:</strong> May - September (highest prices, largest crowds)</li>
+                    <li><strong>Shoulder Season:</strong> April, October (good weather, moderate prices)</li>
+                    <li><strong>Off-Peak:</strong> November - March (lower prices, fewer crowds, cooler weather)</li>
+                </ul>
+
+                <h3>Local Festivals & Events</h3>
+                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-light);">
+                    <li><strong>San Isidro Festival (May 15):</strong> Madrid's patron saint celebration with concerts and events</li>
+                    <li><strong>Madrid Pride (June/July):</strong> One of Europe's largest LGBTQ+ celebrations</li>
+                    <li><strong>Veranos de la Villa (Summer):</strong> Open-air concerts and cultural events</li>
+                    <li><strong>Christmas Markets (December):</strong> Beautiful markets and festive atmosphere</li>
+                </ul>
+
+                <h3>Budget Considerations</h3>
+                <p>Summer months (June-August) see prices increase by 30-50% for accommodations. Book 2-3 months in advance for better rates. Winter offers the best deals, but some attractions may have shorter hours. Shoulder seasons (spring/autumn) provide the best balance of weather, crowds, and prices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section intro">
+        <div class="container">
+            <h2 class="section-title">Explore Madrid</h2>
+            <div style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden; margin-top: 2rem;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.496047897!2d-3.703790215456!3d40.416775479221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Destinations -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Related Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=800&q=80" alt="Rome" class="destination-image">
+                    <div class="destination-content">
+                        <h3>Rome</h3>
+                        <p>Explore ancient history in the Eternal City.</p>
+                        <a href="rome.html" class="destination-link">Explore Rome <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=800&q=80" alt="Hong Kong" class="destination-image">
+                    <div class="destination-content">
+                        <h3>Hong Kong</h3>
+                        <p>Discover the vibrant energy of Asia.</p>
+                        <a href="hong-kong.html" class="destination-link">Explore Hong Kong <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Erica's Travels</h3>
+                    <p>Inspiring adventures and travel stories from around the world. Join me on this incredible journey!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="index.html#destinations" class="footer-link">Destinations</a></li>
+                        <li><a href="about.html#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get travel tips and destination guides delivered to your inbox!</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                        <div class="form-error"></div>
+                        <div class="form-success">Thank you for subscribing!</div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Erica's Travel Blog. All rights reserved. | <a href="#" class="footer-link">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
